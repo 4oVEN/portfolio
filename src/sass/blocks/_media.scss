@@ -21,6 +21,13 @@
       }
     }
   }
+  .resume{
+    &__wrapper{
+      padding: 60px 20px 0 20px;
+      grid-template-columns: repeat(2,410px);
+      column-gap: 100px;
+    }
+  }
 }
 
 @media (max-width: 992px){
@@ -48,6 +55,12 @@
       }
     }
   }
+  .resume{
+    &__wrapper{
+      grid-template-columns: repeat(2,320px);
+      column-gap: 40px;
+    }
+  }
 }
 
 @media (max-width: 768px){
@@ -70,6 +83,14 @@
         grid-template-columns: 40px 200px;
         column-gap: 20px;
       }
+    }
+  }
+  .resume{
+    padding-top: 40px;
+    &__wrapper{
+      grid-template-columns: repeat(2,255px);
+      column-gap: 10px;
+      padding: 20px 0 0 0;
     }
   }
 }
@@ -98,6 +119,14 @@
     }
     &__skills {
       grid-template-columns: 1fr;
+    }
+  }
+  .resume{
+    &__wrapper{
+      grid-template-columns: 1fr;
+    }
+    &__subtitle{
+      font-size: 24px;
     }
   }
 }
