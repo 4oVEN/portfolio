@@ -8,11 +8,45 @@
   .container{
     max-width: 960px;
   }
+  .about {
+    &__wrapper{
+      grid-template-columns: 400px 520px;
+      column-gap: 40px;
+    }
+    &__skills {
+      column-gap: 20px;
+      grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px);
+      &-item{
+        column-gap: 10px;
+      }
+    }
+  }
 }
 
 @media (max-width: 992px){
   .container{
     max-width: 720px;
+  }
+  .title{
+    &_fz36 {
+      font-size: 30px;
+    }
+  }
+  .about{
+    &__wrapper{
+      grid-template-columns: 300px 380px;
+      row-gap: 10px;
+      column-gap: 20px;
+    }
+    &__skills{
+      grid-template-columns: 380px;
+      grid-auto-rows: minmax(115px, auto);
+      row-gap: 0;
+      &-item{
+        grid-template-columns: 40px 320px;
+        column-gap: 20px;
+      }
+    }
   }
 }
 
@@ -23,6 +57,19 @@
   .title{
     &_fz48{
       line-height: 28px;
+    }
+  }
+  .about {
+    padding-top: 40px;
+    &__wrapper{
+      grid-template: 340px auto auto / 1fr;
+    }
+    &__skills{
+      grid-template-columns: repeat(2, 260px);
+      &-item{
+        grid-template-columns: 40px 200px;
+        column-gap: 20px;
+      }
     }
   }
 }
@@ -44,5 +91,13 @@
     width: 290px;
     font-size: 26px;
     line-height: 39px;
+  }
+  .about{
+    &__wrapper{
+      grid-template: 340px auto auto / 1fr;
+    }
+    &__skills {
+      grid-template-columns: 1fr;
+    }
   }
 }

@@ -9,8 +9,12 @@
     row-gap: 40px;
   }
   &__photo{
-    width: 400px;
     grid-row: 1/3;
+    img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
   &__descr{
     padding-top: 6px;
